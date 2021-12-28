@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Number Facts</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body onload="RandomFact(); YrFact(); TrFact(); MathFact(); DateFact()">
+
+
+    <div class="container">
+
+        <!--Random Fact Section-->
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2 id="RandomNumber"></h2>
+                <p id="RandomFact"></p>
+                <button onclick="RandomFact()">Fetch New</button>
+            </div>
+        </div>
+        <!--Year Fact Section-->
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Year Fact</h2>
+                <label for="YrNumber">Year: </label>
+                <input type="number" id="YrNumber" name="Year" placeholder="YYYY">
+                <p id="YrFact"></p>
+                <button onclick="YrFact()">Get Fact</button>
+            </div>
+        </div>
+        <!--Trivia Fact Section-->
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Trivia Fact</h2>
+                <label for="TrNumber">Number: </label>
+                <input type="number" id="TrNumber" name="Trivia" placeholder="Enter 2 Digits">
+                <p id="TrFact"></p>
+                <button onclick="TrFact()">Get Trivia</button>
+            </div>
+        </div> 
+        <!--Math Fact Section-->
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Math Fact</h2>
+                <label for="MathNumber">Number: </label>
+                <input type="number" id="MathNumber" name="Math" placeholder="Any Number">
+                <p id="MathFact"></p>
+                <button onclick="MathFact()">Get Fact</button>
+            </div>
+        </div>
+        <!--Date Fact Section-->
+        <div class="box">
+            <span></span>
+            <div class="content">
+                <h2>Date Fact</h2>
+                <label for="Day">Day: </label>
+                <input type="number" id="Day" name="Date" placeholder="Day DD" pattern="[0-9]+">
+                <label for="Mnth">Month: </label>
+                <input type="number" id="Mnth" name="Month" placeholder="Month MM" pattern="[0-9]+">
+                <p id="DateFact"></p>
+                <button onclick="DateFact()">Get Fact</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
